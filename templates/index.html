@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="main-content">
+    <!-- HERO BÖLÜMÜ -->
+    <div class="hero-section">
+        <h1>Oyun Dünyasının Kalbi</h1>
+        <p>En güncel haberler, video içerikler ve profesyonel analizlerle oyun dünyasını takipte kal!</p>
+    </div>
+
+    <!-- HABERLER BÖLÜMÜ -->
+    <section class="haberler">
+        <h2>Son Haberler</h2>
+        <div class="haber-grid">
+            <div class="haber-karti">
+                <img src="/static/images/haber1.jpg" alt="haber1">
+                <div class="icerik">
+                    <h3>Yeni FPS Oyunu Duyuruldu</h3>
+                    <p>2025’in en çok beklenen aksiyon oyunu, gerçek zamanlı PvP özellikleriyle dikkat çekiyor.</p>
+                </div>
+            </div>
+            <div class="haber-karti">
+                <img src="/static/images/haber2.jpg" alt="haber2">
+                <div class="icerik">
+                    <h3>Turnuva Takvimi Açıklandı</h3>
+                    <p>Türkiye genelinde düzenlenecek e-spor turnuvalarının tarihleri ve detayları belli oldu.</p>
+                </div>
+            </div>
+            <div class="haber-karti">
+                <img src="/static/images/haber3.jpg" alt="haber3">
+                <div class="icerik">
+                    <h3>Oyun Fiyatlarına Zam</h3>
+                    <p>Büyük yapımcılar yeni fiyatlandırma politikasıyla gündemde. Detaylar haberimizde.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %} 

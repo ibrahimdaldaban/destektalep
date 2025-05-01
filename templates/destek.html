@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webtekno Benzeri Header</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background: linear-gradient(90deg, #f44336, #f44336);
+            padding: 0.5rem 1rem;
+        }
+        .navbar-brand img {
+            height: 40px;
+        }
+        .nav-link {
+            color: white !important;
+            font-weight: bold;
+            margin-right: 1rem;
+        }
+        .nav-link:hover {
+            border-bottom: 2px solid white;
+        }
+        .auth-buttons {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .auth-buttons a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .auth-buttons a:hover {
+            text-decoration: underline;
+        }
+        .dropdown-menu {
+            background-color: #f44336;
+        }
+        .dropdown-item {
+            color: white;
+        }
+        .dropdown-item:hover {
+            background-color: #e53935;
+        }
+        .search-icon {
+            font-size: 1.5rem;
+            color: white;
+            cursor: pointer;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <!-- Menü ikonu -->
+        <button class="btn text-white me-3">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Webtekno_logo.png" alt="Logo">
+        </a>
+
+        <!-- Menü linkleri -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ANASAYFA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">HABER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">VİDEO</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="kategorilerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        KATEGORİLER
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="kategorilerDropdown">
+                        <li><a class="dropdown-item" href="#">Teknoloji</a></li>
+                        <li><a class="dropdown-item" href="#">Oyun</a></li>
+                        <li><a class="dropdown-item" href="#">İnceleme</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Sağ taraf: Arama, Giriş Yap -->
+        <div class="auth-buttons">
+            <a href="/login"><i class="bi bi-person"></i> Giriş Yap</a>
+            <a href="/register"><i class="bi bi-person"></i> Kayıt Ol </a>
+            <a href="/destek"><i class="bi bi-person"></i> Destek Panel </a>
+        </div>
+    </div>
+</nav>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
